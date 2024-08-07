@@ -9,6 +9,7 @@ class Admin:
         self.prenom = prenom
         self.email = email
         self.mdp = mdp
+        
 
     def save(self):
         last_admin = mongo.db.admin.find_one(sort=[("id", -1)])
